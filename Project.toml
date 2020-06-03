@@ -1,0 +1,4 @@
+name = "FuzzyFinder"
+uuid = "ebd6b5ff-875f-442d-bd04-bef330cfc39f"
+authors = ["Amey Narkhede <ameynarkhede02@gmail.com>"]
+version = "0.1.0"
