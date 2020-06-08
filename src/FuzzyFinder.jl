@@ -18,10 +18,9 @@ function fuzzyfinder(input, iterable; fetcher::Function=default, sorted=true)
 	pattern = "(?=($pattern))"
 	for item in iterable
 		matches = collect(eachmatch(Regex(pattern, "i"), fetcher(item)))
-		println("Matches => $matches")
 		if !isempty(matches)
-			ll = sort(matches, by=x -> length(x.captures[1]))
-			best = length(ll[1].captures)
+			ord = sort(matches, by=x -> length(x.captures[1]))
+			best = length(ord[1].captures)
 			push!(recommendations, (length(matches[best].captures[1]), matches[best].offset, fetcher(item), item))
 		end
 	end
