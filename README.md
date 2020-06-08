@@ -1,4 +1,6 @@
 # FuzzyFinder.jl
+[![Build Status](https://travis-ci.org/glitzflitz/FuzzyFinder.jl.svg?branch=master)](https://travis-ci.org/glitzflitz/FuzzyFinder.jl)
+
 A pure julia implementation of fuzzy finder inspired by [python fuzzyfinder](https://pypi.org/project/fuzzyfinder/)
 
 ## Example
